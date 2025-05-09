@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intro component with sign up form solution</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="bg-image"></div>
+  <div class="container">
+    <!-- Text content -->
+    <div class="text-content">
+      <h1 class="ml6">
+        <span class="text-wrapper">
+          <span class="letters origin">Learn to code by watching others</span>
+        </span>
+      </h1>
+
+      <p class="ml3">
+        See how experienced developers solve problems in real-time. Watching
+        scripted tutorials is great, but understanding how developers think is
+        invaluable.
+      </p>
+    </div>
+
+    <!-- Form Section -->
+    <div class="form-container">
+
+      <button class="btn-freetry">
+        Try it free 7 days <span>then $20/mo. thereafter</span>
+      </button>
+
+        <form id="form" action="/" method="GET" novalidate>
+          <div>
+            <input id="fname" name="fname" type="text" placeholder="First Name" />
+            <p id="fname-error"></p>
+          </div>
+          <div>
+            <input id="lname" name="lname" type="text" placeholder="Last Name" />
+            <p id="lname-error"></p>
+          </div>
+          <div>
+            <input id="email" name="email" type="email" placeholder="Email Address" />
+            <p id="email-error"></p>
+          </div>
+          <div>
+            <input id="password" name="password" type="password" placeholder="Password" />
+            <p id="password-error"></p>
+          </div>
+          <button class="submit-btn">Claim your free trial</button>
+
+          <p class="info-terms">
+            By clicking the button, you are agreeing to our <span>Terms and Services</span>
+          </p>
+        </form>
+        
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="animate.js"></script>
+  <script src="email.js"></script>
+</body>
+
+</html>
